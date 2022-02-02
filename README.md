@@ -1,4 +1,4 @@
-SensiML xG24 Microphone Data Capture Example
+# SensiML xG24 Microphone Data Capture Example
 Summary
 
 This project uses the Thunderboard Sense 2 (EFR32MG12) and onboard I2S microphone sensor to take audio measurements and send data via serial UART for consumption by SensiML's Data Capture Lab. The example project uses the I/O Stream service along with Microphone component drivers running in a bare-metal configuration. Sensor data from the I2S Microphone is transferred over virtual COM port (VCOM) at 921600 baud. The sensor data output data rate is configured at 16 kHz.
