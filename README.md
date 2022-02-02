@@ -2,18 +2,18 @@
 
 ## Summary ##
 
-This project uses the Thunderboard Sense 2 (EFR32MG12) and onboard I2S microphone sensor to take audio measurements and send data via serial UART for consumption by SensiML's Data Capture Lab. The example project uses the I/O Stream service along with Microphone component drivers running in a bare-metal configuration. Sensor data from the I2S Microphone is transferred over virtual COM port (VCOM) at 921600 baud. The sensor data output data rate is configured at 16 kHz.
+This project uses the EFR32xG24 Dev Kit Board and onboard I2S microphone sensor to take audio measurements and send data via serial UART for consumption by SensiML's Data Capture Lab. The example project uses the I/O Stream service along with Microphone component drivers running in a bare-metal configuration. Sensor data from the I2S Microphone is transferred over virtual COM port (VCOM) at 921600 baud. The sensor data output data rate is configured at 16 kHz.
 
 Software Components used: I2S Microphone, Simple LED, IO Stream: USART, Sleeptimer
 
 ## Gecko SDK version ##
 
-v3.1
+v4.0
 
 ## Hardware Required ##
 
-- One SLTB004A Thunderboard Sense 2 Development Kit
-<https://www.silabs.com/development-tools/thunderboard/thunderboard-sense-two-kit>
+- One EFR32xG24 Dev Kit Board (Link currently unavailable)
+
 - One micro USB cable
 
 ## Setup ##
@@ -22,9 +22,9 @@ Import the included .sls file to Studio then build and flash the project to the 
 In Simplicity Studio select "File->Import" and navigate to the directory with the .sls project file.
 The project is built with relative paths to the STUDIO_SDK_LOC variable which was defined as
 
-C:\SiliconLabs\SimplicityStudio\v5\developer\sdks\gecko_sdk_suite\v3.1
+C:\SiliconLabs\SimplicityStudio\v5\developer\sdks\gecko_sdk_suite\v4.0
 
-In Simplicity Studio, under the Debug Adapters window, right-click on the Thunderboard Sense 2 device and select "Launch console..." from the drop-down menu. In the Adapter Console window, select the "Admin" tab and type "serial vcom config speed 921600" into the terminal input. This will modify the VCOM baudrate to match the application settings. If making any changes to the USART baudrate, the baudrate change must also be modified in the VCOM debug adapter settings.
+In Simplicity Studio, under the Debug Adapters window, right-click on the EFR32xG24 Dev Kit Board device and select "Launch console..." from the drop-down menu. In the Adapter Console window, select the "Admin" tab and type "serial vcom config speed 921600" into the terminal input. This will modify the VCOM baudrate to match the application settings. If making any changes to the USART baudrate, the baudrate change must also be modified in the VCOM debug adapter settings.
 
 ## How the Project Works ##
 
