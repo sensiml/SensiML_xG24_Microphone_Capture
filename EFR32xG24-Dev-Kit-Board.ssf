@@ -1,0 +1,101 @@
+{
+    "uuid": "00000000-0000-0000-0000-000000000000",
+    "device_name": "EFR32xG24 Dev Kit Board Custom",
+    "device_manufacturer": "Silicon Labs",
+    "plugin_developer": "Silicon Labs",
+    "firmware_download_links": [
+        {
+            "title": "SensiML GitHub Repository for IMU Data Capture",
+            "link": "https://github.com/sensiml/SensiML_xG24_IMU_Capture",
+            "description": "Examples for building IMU data collection firmware"
+        },
+        {
+            "title": "SensiML GitHub Repository for Audio Data Capture",
+            "link": "https://github.com/sensiml/SensiML_xG24_Microphone_Capture",
+            "description": "Examples for building Audio data collection firmware"
+        }
+    ],
+    "device_connections": [
+        {
+            "display_name": "Serial Port",
+            "value": 1,
+            "is_default": true,
+            "serial_port_configuration": {
+                "baud": 921600,
+                "stop_bits": 1,
+                "parity": 0,
+                "handshake": 0
+            }
+        },
+        {
+            "display_name": "Wi-Fi",
+            "value": 2,
+            "is_default": false
+        },
+        {
+            "display_name": "Bluetooth-LE",
+            "value": 0,
+            "is_default": false,
+            "bluetooth_le_configuration": {
+                "uuid_service": "16480000-0525-4ad5-b4fb-6dd83f49546b",
+                "uuid_sensor_data_out": "16480002-0525-4ad5-b4fb-6dd83f49546b",
+                "uuid_device_configuration": "16480001-0525-4ad5-b4fb-6dd83f49546b"
+            }
+        }
+    ],
+    "capture_sources": [
+        {
+            "name": "Motion",
+            "part": "Default",
+            "sample_rates": [
+                562,
+                281,
+                187,
+                140,
+                102,
+                70,
+                48,
+                35,
+                17,
+                4
+            ],
+            "sensors": [
+                {
+                    "is_default": true,
+                    "column_count": 3,
+                    "column_suffixes": [
+                        "X",
+                        "Y",
+                        "Z"
+                    ],
+                    "type": "Accelerometer"
+                },
+                {
+                    "is_default": true,
+                    "column_count": 3,
+                    "column_suffixes": [
+                        "X",
+                        "Y",
+                        "Z"
+                    ],
+                    "type": "Gyroscope"
+                }
+            ]
+        },
+        {
+            "name": "Audio",
+            "part": "Default",
+            "sample_rates": [
+                16000
+            ],
+            "sensors": [
+                {
+                    "is_default": true,
+                    "column_count": 1,
+                    "type": "Microphone"
+                }
+            ]
+        }
+    ],
+    "is_little_endian": true
+}
