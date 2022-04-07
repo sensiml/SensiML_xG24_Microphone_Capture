@@ -8,7 +8,7 @@ Software Components used: I2S Microphone, Simple LED, IO Stream: USART, Sleeptim
 
 ## Gecko SDK version ##
 
-v4.0
+v4.02
 
 ## Hardware Required ##
 
