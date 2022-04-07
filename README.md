@@ -47,3 +47,4 @@ Open the "Project Properties" and navigate to the "C/C++ Build -> Board/Part/SDK
 ## Known issue ##
 
 When connected to the Data Capture Lab, if the device is used to record data for a long period of time, noise can be introduced into the audio data. This is being investigated internally. 
+
